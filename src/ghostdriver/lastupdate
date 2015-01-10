@@ -1,7 +1,7 @@
-2014-01-04 16:44:10
+2015-01-10 16:13:51
 
-commit 491a60b0adf78e6d7a4eff980de81bb3eb8c764d (HEAD, refs/remotes/origin/master, refs/remotes/origin/HEAD, refs/heads/master)
+commit 8abdf0e2b7322b7daad566a2a13b834c158277f9 (HEAD, refs/remotes/origin/master, refs/remotes/origin/HEAD, refs/heads/master)
 Author: Ivan De Marino <detronizator@gmail.com>
-Date:   Thu Jan 2 23:02:21 2014 +0000
+Date:   Wed Nov 12 19:43:01 2014 +0000
 
-    Updated CHANGELOG to mention upgraded Atoms in 1.1.0
+    Update webelement_request_handler.js
