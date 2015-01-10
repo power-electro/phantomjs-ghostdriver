@@ -25,11 +25,11 @@ if type yum >/dev/null 2>&1; then
     fi
 fi
 
-if [[ ! -d phantomjs ]]; then
-    git clone git://github.com/ariya/phantomjs.git
+if [[ ! -d phantomjs-ghostdriver ]]; then
+    git clone git://github.com/kinwahlai/phantomjs-ghostdriver.git
 fi
 
-cd phantomjs
+cd phantomjs-ghostdriver
 git fetch origin
 git reset --hard
 git checkout $1
