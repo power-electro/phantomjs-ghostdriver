@@ -24,10 +24,21 @@ ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
 (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 */
-int ip = System.getenv("OPENSHIFT_DIY_IP");
+
+try
+{
+   string ip = System.getenv("OPENSHIFT_DIY_IP");    // but you try it anyway
+   string port = "15090";
+}
+catch (ArithmeticException e)
+{
+   System.out.println(" no OPENSHIFT_DIY_IP Can't do that!");
+   string ip ="127.0.01";
+   string port = "8089";
+}
 // Default configuration
 var defaultConfig = {
-        "ip"        : "127.0.0.1",
+        "ip"        : ip,
         "port"      : "15090",
         "hub"       : null,
         "logFile"   : null,
