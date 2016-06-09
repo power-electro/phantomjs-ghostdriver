@@ -24,11 +24,11 @@ ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
 (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 */
-
+int ip = System.getenv("OPENSHIFT_DIY_IP");
 // Default configuration
 var defaultConfig = {
         "ip"        : "127.0.0.1",
-        "port"      : "8910",
+        "port"      : "15090",
         "hub"       : null,
         "logFile"   : null,
         "logLevel"  : "INFO",
