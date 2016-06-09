@@ -34,7 +34,7 @@ catch (ArithmeticException e)
 {
    System.out.println(" no OPENSHIFT_DIY_IP Can't do that!");
    string ip ="127.0.01";
-   string port = "8089";
+   string port = "8910";
 }
 // Default configuration
 var defaultConfig = {
