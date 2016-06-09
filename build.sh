@@ -112,7 +112,7 @@ cd src/qt && ./preconfig.sh --jobs $COMPILE_JOBS --qt-config "$QT_CFG" $SILENT &
 echo "Building main PhantomJS application. Please wait..."
 echo
 cd $OPENSHIFT_HOMEDIR/app-root/runtime/srv/phantomjs
-mkdir cd $OPENSHIFT_HOMEDIR/app-root/runtime/srv/phantomjs/qt
-src/qt/configure -prefix=$OPENSHIFT_HOMEDIR/app-root/runtime/srv/phantomjs/qt
+mkdir  $OPENSHIFT_HOMEDIR/app-root/runtime/srv/phantomjs/qt
+src/qt/configure -opensource  -prefix $OPENSHIFT_HOMEDIR/app-root/runtime/srv/phantomjs/qt
 src/qt/bin/qmake $QMAKE_ARGS
 make -j$COMPILE_JOBS
